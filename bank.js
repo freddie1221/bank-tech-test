@@ -11,4 +11,8 @@ Account.prototype.withdraw = function(amount){
   this.balance -= amount
 }
 
+Account.prototype.reset = function(){
+  this.balance = 0
+}
+
 module.exports = Account
