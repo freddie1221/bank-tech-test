@@ -1,0 +1,27 @@
+{
+  "name": "bank-tech-test",
+  "version": "1.0.0",
+  "description": "Bank tech test, written in JS & tested with Jest",
+  "main": "bank.js",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.6.0",
+    "babel-polyfill": "^6.26.0",
+    "jest": "^23.6.0",
+    "regenerator-runtime": "^0.12.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freddie1221/bank-tech-test.git"
+  },
+  "author": "Freddie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freddie1221/bank-tech-test/issues"
+  },
+  "homepage": "https://github.com/freddie1221/bank-tech-test#readme"
+}
