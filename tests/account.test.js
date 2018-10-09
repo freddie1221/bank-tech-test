@@ -1,9 +1,7 @@
 const Account = require("../lib/account")
 
-
 const MockTransactionType = jest.fn()
 var account = new Account(MockTransactionType)
-
 
 describe('first tests', function(){
   
