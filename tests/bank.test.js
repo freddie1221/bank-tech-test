@@ -7,7 +7,6 @@ var account = new Account(MockTransactionType)
 
 describe('first tests', function(){
   
-
   test('can add a credit',() => {
     account.addCredit(30)
     expect(account.transactions.length).toBe(1)
@@ -18,7 +17,4 @@ describe('first tests', function(){
     expect(account.transactions.length).toBe(2)
   });
 
-  xtest('it can return its balance',() => {
-    expect(account.transactions[0].credit).toHaveBeenCalled()
-  });
 });
