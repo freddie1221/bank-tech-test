@@ -1,4 +1,4 @@
-const Account = require("../lib/bank")
+const Account = require("../lib/account")
 
 
 const MockTransactionType = jest.fn()
