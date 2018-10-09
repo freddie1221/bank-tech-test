@@ -1,12 +1,39 @@
 const Transaction = require("../lib/transaction")
 
-var transaction = new Transaction(10)
+var creditTransaction = new Transaction(10,0)
+var debitTransaction = new Transaction(0,-20)
+var dateToday = new Date().getDate()
+var priorTransactions = [creditTransaction,creditTransaction]
 
-test('it has an amount',() => {
-  expect(transaction.value).toBe(10)
+describe('credit',() => {
+  test('it has a credit',() => {
+    expect(creditTransaction.credit).toBe(10)
+  });
+  test('it has no debit',() => {
+    expect(creditTransaction.debit).toBe(0)
+  });
+  test('it has a date',() => {
+    expect(creditTransaction.date.getDate()).toBe(dateToday)
+  });
+  test('it has a balance',() => {
+    expect(creditTransaction.balance).toBe(10)
+  });
 });
 
-test('it has a date',() => {
-  var dateToday = new Date().getDate()
-  expect(transaction.date.getDate()).toBe(dateToday)
+describe('debit',() => {
+  test('it has a debit',() => {
+    expect(debitTransaction.debit).toBe(-20)
+  });
+  test('it has no credit',() => {
+    expect(debitTransaction.credit).toBe(0)
+  });
+  test('it has a date',() => {
+    expect(debitTransaction.date.getDate()).toBe(dateToday)
+  });
+  test('it has a balance',() => {
+    expect(creditTransaction.balance).toBe(-20)
+  });
 });
+
+
+
