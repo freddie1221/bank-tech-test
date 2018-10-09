@@ -1,9 +1,8 @@
 const Transaction = require("../lib/transaction")
 
-var creditTransaction = new Transaction(10,0)
-var debitTransaction = new Transaction(0,-20)
+var creditTransaction = new Transaction(10, 0)
+var debitTransaction = new Transaction(0, -20)
 var dateToday = new Date().getDate()
-var priorTransactions = [creditTransaction,creditTransaction]
 
 describe('credit',() => {
   test('it has a credit',() => {
@@ -14,9 +13,6 @@ describe('credit',() => {
   });
   test('it has a date',() => {
     expect(creditTransaction.date.getDate()).toBe(dateToday)
-  });
-  test('it has a balance',() => {
-    expect(creditTransaction.balance).toBe(10)
   });
 });
 
@@ -29,9 +25,6 @@ describe('debit',() => {
   });
   test('it has a date',() => {
     expect(debitTransaction.date.getDate()).toBe(dateToday)
-  });
-  test('it has a balance',() => {
-    expect(creditTransaction.balance).toBe(-20)
   });
 });
 

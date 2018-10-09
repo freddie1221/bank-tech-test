@@ -23,8 +23,5 @@ describe('first tests', function(){
   });
 });
 
-// I can't yet work out how to mock the transaction
 
-// The thing that confuses me about update balance is, I would normally expect this to
-// be a private method
 
