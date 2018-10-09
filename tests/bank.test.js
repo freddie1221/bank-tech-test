@@ -22,6 +22,3 @@ describe('first tests', function(){
     expect(account.transactions[0].credit).toHaveBeenCalled()
   });
 });
-
-
-
