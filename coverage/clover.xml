@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1539172180303" clover="3.2.0">
-  <project timestamp="1539172180303" name="All files">
+<coverage generated="1539179166456" clover="3.2.0">
+  <project timestamp="1539179166456" name="All files">
     <metrics statements="26" coveredstatements="26" conditionals="1" coveredconditionals="0" methods="7" coveredmethods="7" elements="34" coveredelements="33" complexity="0" loc="26" ncloc="26" packages="1" files="3" classes="3">
       <file name="account.js" path="/Users/flawson/projects/javascript/tech-tests/bank-tech-test/lib/account.js">
         <metrics statements="17" coveredstatements="17" conditionals="1" coveredconditionals="0" methods="4" coveredmethods="4"/>
@@ -15,11 +15,11 @@
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
-        <line num="20" count="2" type="stmt"/>
-        <line num="21" count="2" type="stmt"/>
-        <line num="22" count="3" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
-        <line num="25" count="2" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="21" count="3" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="23" count="5" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
       </file>
       <file name="statement.js" path="/Users/flawson/projects/javascript/tech-tests/bank-tech-test/lib/statement.js">
@@ -35,7 +35,7 @@
         <line num="4" count="2" type="stmt"/>
         <line num="5" count="2" type="stmt"/>
         <line num="6" count="2" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
       </file>
     </metrics>
   </project>

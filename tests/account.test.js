@@ -1,7 +1,8 @@
 const Account = require("../lib/account")
+const Transaction = require("../lib/transaction")
+jest.mock("../lib/transaction.js");
 
-const MockTransactionType = jest.fn()
-var account = new Account(MockTransactionType)
+var account = new Account(Transaction)
 
 describe('first tests', function(){
   
@@ -15,4 +16,15 @@ describe('first tests', function(){
     expect(account.transactions.length).toBe(2)
   });
 
+  test('it can check the balance', () => {
+    account.balance()
+    expect()
+  });
+
 });
+// unit test for check balance
+// How should I approach this?
+// the balance method uses properties of the transaction class
+// so I want to say "transaction object should receive this message"
+// The problem is, the transaction object is instantiated by the Account method. So how can I
+// get the class to instantiate a mock object
