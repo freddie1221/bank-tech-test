@@ -16,7 +16,7 @@ describe('first tests', function(){
     expect(account.transactions.length).toBe(2)
   });
 
-  test('it can check the balance', () => {
+  xtest('it can check the balance', () => {
     account.balance()
     expect()
   });
