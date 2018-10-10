@@ -4,20 +4,19 @@
 
 ## Testing
 - This uses the Jest fraemwork for unit tests
+- To run the unit tests:
+  - `npm install` (install Jest)
+  - `npm test` (run unit tests)
+- To run the feature tests
+  - `node` to initiate the node REPL
+  -  `.load tests/featureTests.js`
 
-
-## How to run the code
-- in the console, go to the directory
+## To run the code
 - install the dependencies - `npm install`
-- `node` to initiate the node REPL
-- `.load` lib/bank.js, lib/statement.js, lib/transaction.js
+- `.load` lib/app.js
 
 ## How to interact with the program
 ```
-// instantiate the account and statement
-account = new Account()
-statement = new Statement(account)
-
 // add credits / debits to the account
 account.addCredit(40)
 account.addDebit(30)
